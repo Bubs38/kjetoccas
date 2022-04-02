@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "font1";
+  src: url(../font/Oswald-Bold.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(../font/SourceSansPro.ttf);
+}
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+
+$white: rgb(243, 243, 243);
+$gunmetal: #2A2D34;
+$beige: #C7AC92;
+$brown: #7A4500;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  background: url(../img/headerBG.jpeg);
+}
+
+.btn {
+  background: $beige;
+  width: 140px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font2;
+  font-size: 0.9rem;
+  border: none;
+  padding: 0 20px;
+  border-radius: 5px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+  &:hover {
+    background: $gunmetal;
+    color: $beige;
+    border: 1px solid $beige;
+  }
+}

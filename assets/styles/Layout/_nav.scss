@@ -1,0 +1,26 @@
+nav {
+  background: $gunmetal;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+  margin: auto;
+  button {
+    margin: 0 auto;
+  }
+  ul {
+    display: flex;
+    margin: 0 auto;
+    li {
+      font-family: $font2;
+      padding: 10px;
+      a, a:visited{
+        color: $white;
+        cursor: pointer;
+        &:hover {
+          color: $beige;
+        }
+      } 
+    }
+  }
+}
