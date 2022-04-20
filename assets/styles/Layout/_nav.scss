@@ -1,19 +1,17 @@
 nav {
   background: $gunmetal;
-  height: 10vh;
+  height: 5%;
   display: grid;
   grid-template-columns: 80% 20%;
-  align-items: center;
-  margin: auto;
-  button {
-    margin: 0 auto;
-  }
+  font-size: 1.2rem;
   ul {
     display: flex;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: start;
+    margin-left: 50px;
     li {
       font-family: $font2;
-      padding: 10px;
+      padding: 10px 15px;
       a, a:visited{
         color: $white;
         cursor: pointer;
@@ -21,6 +19,18 @@ nav {
           color: $beige;
         }
       } 
+    }
+  }
+  .contact-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    i {
+      margin-right: 15px;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 }

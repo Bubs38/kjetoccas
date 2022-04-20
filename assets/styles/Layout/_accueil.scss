@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  background: url(/assets/img/headerBG.jpeg) center/cover;
+  height: 95%;
+  width: 100%;
+  text-align: center;
+  .header-opacity {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header-text-container {
+      color: $white;
+      h1 {
+        font-family: $font1;
+        font-size: 4.5rem;
+      }
+      p {
+        font-family: $font2;
+        font-size: 1.5rem;
+        margin: 50px auto 120px;
+  
+      }
+    }
+    .header-infos-container {
+      width: 60%;
+      height: 30%;
+      background: $whiteOpacity;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      h2 {
+        color: $brown;
+        font-family: $font2;
+        font-size: 2rem;
+      }
+      .header-infos {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        font-family: $font2;
+        font-size: 1.3rem;
+        i {
+          font-size: 3.5rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
