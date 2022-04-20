@@ -28,7 +28,7 @@ a, a:visited {
   text-decoration: none;
 }
 
-header {
+.homepage {
   background: url(../img/headerBG.jpeg);
 }
 
@@ -63,7 +63,7 @@ header {
 
 nav {
   background: #2A2D34;
-  height: 5%;
+  height: 5vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80% 20%;
@@ -119,19 +119,14 @@ nav .contact-nav p {
   font-size: 1.2rem;
 }
 
-body {
-  height: 100vh;
-  width: 100%;
-}
-
-header {
+.homepage {
   background: url(/assets/img/headerBG.jpeg) center/cover;
-  height: 95%;
+  height: 95vh;
   width: 100%;
   text-align: center;
 }
 
-header .header-opacity {
+.homepage .homepage-opacity {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.247);
@@ -150,22 +145,22 @@ header .header-opacity {
           justify-content: center;
 }
 
-header .header-opacity .header-text-container {
+.homepage .homepage-opacity .homepage-text-container {
   color: #f1f0f0;
 }
 
-header .header-opacity .header-text-container h1 {
+.homepage .homepage-opacity .homepage-text-container h1 {
   font-family: "font1", sans-serif;
   font-size: 4.5rem;
 }
 
-header .header-opacity .header-text-container p {
+.homepage .homepage-opacity .homepage-text-container p {
   font-family: "font2", sans-serif;
   font-size: 1.5rem;
   margin: 50px auto 120px;
 }
 
-header .header-opacity .header-infos-container {
+.homepage .homepage-opacity .homepage-infos-container {
   width: 60%;
   height: 30%;
   background: rgba(241, 240, 240, 0.7);
@@ -185,13 +180,13 @@ header .header-opacity .header-infos-container {
           justify-content: space-evenly;
 }
 
-header .header-opacity .header-infos-container h2 {
+.homepage .homepage-opacity .homepage-infos-container h2 {
   color: #7A4500;
   font-family: "font2", sans-serif;
   font-size: 2rem;
 }
 
-header .header-opacity .header-infos-container .header-infos {
+.homepage .homepage-opacity .homepage-infos-container .homepage-infos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
@@ -200,8 +195,107 @@ header .header-opacity .header-infos-container .header-infos {
   font-size: 1.3rem;
 }
 
-header .header-opacity .header-infos-container .header-infos i {
+.homepage .homepage-opacity .homepage-infos-container .homepage-infos i {
   font-size: 3.5rem;
   margin-bottom: 20px;
+}
+
+.presPage-section-1 {
+  margin: 0 auto;
+  padding: 5% 10%;
+  min-height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+}
+
+.presPage-section-1 .presPage-section-1-left {
+  background: url(/assets/img/pallet1.jpeg) center/cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+}
+
+.presPage-section-1 .presPage-section-1-right {
+  padding-left: 80px;
+}
+
+.presPage-section-1 .presPage-section-1-right .presPage-section-1-right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.presPage-section-1 .presPage-section-1-right h1 {
+  font-family: "font1", sans-serif;
+  font-size: 2.5rem;
+  color: #7A4500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.presPage-section-1 .presPage-section-1-right p {
+  font-family: "font2", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.presPage-section-2 {
+  margin: 0 auto;
+  padding: 5% 10%;
+  min-height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  background: #C7AC92;
+}
+
+.presPage-section-2 .presPage-section-2-left {
+  padding-right: 80px;
+}
+
+.presPage-section-2 .presPage-section-2-left .presPage-section-2-left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+
+.presPage-section-2 .presPage-section-2-left h2 {
+  font-family: "font1", sans-serif;
+  font-size: 2.5rem;
+  color: #7A4500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.presPage-section-2 .presPage-section-2-left p {
+  font-family: "font2", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.presPage-section-2 .presPage-section-2-right {
+  background: url(/assets/img/palette-bois-min.jpeg) center/cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
 }
 /*# sourceMappingURL=index.css.map */

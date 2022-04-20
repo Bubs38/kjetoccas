@@ -1,0 +1,70 @@
+.presPage-section-1 {
+  margin: 0 auto;
+  padding: 5% 10%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  .presPage-section-1-left {
+    background: url(/assets/img/pallet1.jpeg) center/cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+  }
+  .presPage-section-1-right {
+    padding-left: 80px;
+    .presPage-section-1-right-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      
+    }
+    h1 {
+      font-family: $font1;
+      font-size: 2.5rem;
+      color: $brown;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: $font2;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+
+}
+.presPage-section-2 {
+  margin: 0 auto;
+  padding: 5% 10%;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  background: $beige;
+  .presPage-section-2-left {
+    padding-right: 80px;
+    .presPage-section-2-left-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+    }
+    h2 {
+      font-family: $font1;
+      font-size: 2.5rem;
+      color: $brown;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: $font2;
+      font-size: 1.3rem;
+      line-height: 2rem;
+    }
+  }
+
+  .presPage-section-2-right {
+    background: url(/assets/img/palette-bois-min.jpeg) center/cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+  }
+}

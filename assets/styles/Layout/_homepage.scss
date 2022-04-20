@@ -1,14 +1,9 @@
-body {
-  height: 100vh;
-  width: 100%;
-}
-
-header {
+.homepage {
   background: url(/assets/img/headerBG.jpeg) center/cover;
-  height: 95%;
+  height: 95vh;
   width: 100%;
   text-align: center;
-  .header-opacity {
+  .homepage-opacity {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.247);
@@ -16,7 +11,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .header-text-container {
+    .homepage-text-container {
       color: $white;
       h1 {
         font-family: $font1;
@@ -29,7 +24,7 @@ header {
   
       }
     }
-    .header-infos-container {
+    .homepage-infos-container {
       width: 60%;
       height: 30%;
       background: $whiteOpacity;
@@ -43,7 +38,7 @@ header {
         font-family: $font2;
         font-size: 2rem;
       }
-      .header-infos {
+      .homepage-infos {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         font-family: $font2;
