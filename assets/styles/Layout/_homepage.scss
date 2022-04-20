@@ -1,42 +1,47 @@
 .homepage {
-  background: url(/assets/img/headerBG.jpeg) center/cover;
-  height: 95vh;
-  width: 100%;
+  background: url(/assets/img/headerBG.jpeg) no-repeat center fixed;
+  height: 100vh;
+  background-size: cover;
   text-align: center;
   .homepage-opacity {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.247);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 18fr 12fr 1fr;
     .homepage-text-container {
+      grid-row: 1 / 2;
+      margin: auto ;
       color: $white;
       h1 {
         font-family: $font1;
         font-size: 4.5rem;
+        width: 80%;
+        margin: 0 auto ;
       }
       p {
         font-family: $font2;
         font-size: 1.5rem;
-        margin: 50px auto 120px;
-  
+        margin: 0 auto;
+        padding-top: 40px;
+        font-weight: bolder;
       }
     }
     .homepage-infos-container {
-      width: 60%;
-      height: 30%;
+      grid-row: 2 / 3;
+      margin: auto;
+      padding: 20px;
       background: $whiteOpacity;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
       h2 {
         color: $brown;
         font-family: $font2;
         font-size: 2rem;
+        margin-bottom: 30px;
       }
       .homepage-infos {
         display: grid;
@@ -47,6 +52,18 @@
           font-size: 3.5rem;
           margin-bottom: 20px;
         }
+      }
+    }
+    footer {
+      background: $gunmetal;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p {
+        color: $white;
+        font-size: 0.8rem;
+        font-family: $font2;
       }
     }
   }

@@ -63,7 +63,9 @@ a, a:visited {
 
 nav {
   background: #2A2D34;
-  height: 5vh;
+  position: fixed;
+  height: 45px;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 80% 20%;
@@ -120,49 +122,51 @@ nav .contact-nav p {
 }
 
 .homepage {
-  background: url(/assets/img/headerBG.jpeg) center/cover;
-  height: 95vh;
-  width: 100%;
+  background: url(/assets/img/headerBG.jpeg) no-repeat center fixed;
+  height: 100vh;
+  background-size: cover;
   text-align: center;
 }
 
 .homepage .homepage-opacity {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.247);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 18fr 12fr 1fr;
+      grid-template-rows: 18fr 12fr 1fr;
 }
 
 .homepage .homepage-opacity .homepage-text-container {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  margin: auto;
   color: #f1f0f0;
 }
 
 .homepage .homepage-opacity .homepage-text-container h1 {
   font-family: "font1", sans-serif;
   font-size: 4.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .homepage .homepage-opacity .homepage-text-container p {
   font-family: "font2", sans-serif;
   font-size: 1.5rem;
-  margin: 50px auto 120px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font-weight: bolder;
 }
 
 .homepage .homepage-opacity .homepage-infos-container {
-  width: 60%;
-  height: 30%;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  margin: auto;
+  padding: 20px;
   background: rgba(241, 240, 240, 0.7);
   border-radius: 10px;
   display: -webkit-box;
@@ -175,15 +179,16 @@ nav .contact-nav p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .homepage .homepage-opacity .homepage-infos-container h2 {
   color: #7A4500;
   font-family: "font2", sans-serif;
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .homepage .homepage-opacity .homepage-infos-container .homepage-infos {
@@ -198,6 +203,26 @@ nav .contact-nav p {
 .homepage .homepage-opacity .homepage-infos-container .homepage-infos i {
   font-size: 3.5rem;
   margin-bottom: 20px;
+}
+
+.homepage .homepage-opacity footer {
+  background: #2A2D34;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homepage .homepage-opacity footer p {
+  color: #f1f0f0;
+  font-size: 0.8rem;
+  font-family: "font2", sans-serif;
 }
 
 .presPage-section-1 {
@@ -293,9 +318,48 @@ nav .contact-nav p {
 }
 
 .presPage-section-2 .presPage-section-2-right {
-  background: url(/assets/img/palette-bois-min.jpeg) center/cover;
+  background: url(/assets/img/pallet4.jpeg) center/cover;
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+}
+
+.presPage-section-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 5% 10%;
+  gap: 50px;
+}
+
+.presPage-section-3 h2 {
+  font-family: "font1", sans-serif;
+  font-size: 2.5rem;
+  color: #7A4500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.presPage-section-3 p {
+  font-family: "font2", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.presPage-section-3 img {
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+  display: block;
+  margin: 0 auto 40px;
+}
+
+.presPage-section-3 .presPage-section-3-left-container img {
+  width: 100%;
+}
+
+.presPage-section-3 .presPage-section-3-right-container img {
+  width: 89%;
 }
 /*# sourceMappingURL=index.css.map */
