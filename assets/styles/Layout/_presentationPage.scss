@@ -6,9 +6,13 @@
   display: grid;
   grid-template-columns: 45% 55%;
   .presPage-section-1-left {
-    background: url(/assets/img/pallet1.jpeg) center/cover;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+    img {
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
   }
   .presPage-section-1-right {
     padding-left: 80px;
@@ -65,9 +69,12 @@
     }
   }
   .presPage-section-2-right {
-    background: url(/assets/img/pallet4.jpeg) center/cover;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+    img {
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
+      display: block;
+      margin: 0 auto 40px;
+    }
   }
 }
 
