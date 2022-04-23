@@ -3,9 +3,10 @@ nav {
   position: fixed;
   height: 45px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 80% 20%;
+  display: flex;
+  justify-content: space-between;
   font-size: 1.2rem;
+  padding: 0 20px;
   ul {
     display: flex;
     align-items: center;

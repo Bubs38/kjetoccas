@@ -13,6 +13,7 @@
 </head>
 <body>
   <nav>
+    <div class="logo-nav"></div>
     <ul>
       <li><a href="../../index.html">Accueil</a></li>
       <li><a href="./presentation.html">Présentation</a></li>
@@ -28,7 +29,9 @@
   </nav>
   <div class="contact-container">
     <div class="contact-text-container">
-      <h1>contact</h1>
+      <div class="contact-title-container">
+        <h1>contact</h1>
+      </div>
       <div class="contact-infos-container">
         <div class="contact-infos-container-part1">
           <div class="contact-infos">
@@ -59,20 +62,51 @@
           </div>
         </div>
         <div class="contact-infos-container-part3">
-          <div class="contact-infos">
+          <h3>Horaires</h3>
+          <!-- <div class="contact-infos">
             <p>Lun - Ven</p>
             <p>07:00 - 12:00<br/>14:00 - 16:00</p>
           </div>
           <div class="contact-infos">
             <p>Sam - Dim</p>
             <p>Fermé</p>
-          </div>
+          </div> -->
+          <table>
+            <tbody>
+              <tr>
+                <td>Lundi</td>
+                <td rowspan="5" class="open-closed">07h00 - 12h00 <br/> 04h00 - 16h00</td>
+              </tr>
+              <tr>
+                <td>Mardi</td>
+              </tr>
+              <tr>
+                <td>Mercredi</td>
+              </tr>
+              <tr>
+                <td>Jeudi</td>
+              </tr>
+              <tr>
+                <td>Vendredi</td>
+              </tr>
+              <tr>
+                <td>Samedi</td>
+                <td rowspan="2" class="open-closed">Fermé</td>
+              </tr>
+              <tr>
+                <td>Dimanche</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
     <div class="contact-map-container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.0779390398498!2d5.715804572353987!3d45.170694475203454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af4a354c9769b%3A0x7e858203a143ef17!2s117%20Rue%20des%20Alli%C3%A9s%2C%2038100%20Grenoble!5e0!3m2!1sfr!2sfr!4v1650458824845!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <footer>
+      <p>2022 by Bubs</p>
+    </footer>
   </div>
 </body>
 </html>

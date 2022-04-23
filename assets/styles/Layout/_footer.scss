@@ -1,0 +1,12 @@
+footer {
+  background: $gunmetal;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: $white;
+    font-size: 0.8rem;
+    font-family: $font2;
+  }
+}
