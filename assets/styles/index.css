@@ -166,14 +166,14 @@ footer p {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   margin: auto;
-  color: #f1f0f0;
 }
 
-.homepage .homepage-opacity .homepage-text-container h1 {
+.homepage .homepage-opacity .homepage-text-container #main-h1 {
   font-family: "font1", sans-serif;
   font-size: 4.5rem;
   width: 80%;
   margin: 0 auto;
+  color: #f1f0f0;
 }
 
 .homepage .homepage-opacity .homepage-text-container p {
@@ -182,6 +182,7 @@ footer p {
   margin: 0 auto;
   padding-top: 40px;
   font-weight: bolder;
+  color: #f1f0f0;
 }
 
 @media screen and (max-height: 800px) {
@@ -251,6 +252,32 @@ footer p {
   }
 }
 
+h1, h2 {
+  font-family: "font1", sans-serif;
+  font-size: 2.5rem;
+  color: #7A4500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+  h1, h2 {
+    font-size: 2.2rem;
+  }
+}
+
+p {
+  font-family: "font2", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+
 .presPage-section-1 {
   margin: 0 auto;
   padding: 5% 10%;
@@ -261,12 +288,22 @@ footer p {
       grid-template-columns: 45% 55%;
 }
 
+.presPage-section-1 .presPage-section-1-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .presPage-section-1 .presPage-section-1-left img {
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
-  display: block;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -286,20 +323,6 @@ footer p {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 100%;
-}
-
-.presPage-section-1 .presPage-section-1-right h1 {
-  font-family: "font1", sans-serif;
-  font-size: 2.5rem;
-  color: #7A4500;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.presPage-section-1 .presPage-section-1-right p {
-  font-family: "font2", sans-serif;
-  font-size: 1.3rem;
-  line-height: 2rem;
 }
 
 .presPage-section-2 {
@@ -331,26 +354,23 @@ footer p {
   height: 100%;
 }
 
-.presPage-section-2 .presPage-section-2-left h2 {
-  font-family: "font1", sans-serif;
-  font-size: 2.5rem;
-  color: #7A4500;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.presPage-section-2 .presPage-section-2-left p {
-  font-family: "font2", sans-serif;
-  font-size: 1.3rem;
-  line-height: 2rem;
+.presPage-section-2 .presPage-section-2-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .presPage-section-2 .presPage-section-2-right img {
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
-  display: block;
-  margin: 0 auto 40px;
+  width: 100%;
 }
 
 .presPage-section-3 {
@@ -360,20 +380,6 @@ footer p {
       grid-template-columns: 1fr 1fr;
   padding: 5% 10%;
   gap: 50px;
-}
-
-.presPage-section-3 h2 {
-  font-family: "font1", sans-serif;
-  font-size: 2.5rem;
-  color: #7A4500;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.presPage-section-3 p {
-  font-family: "font2", sans-serif;
-  font-size: 1.3rem;
-  line-height: 2rem;
 }
 
 .presPage-section-3 img {
@@ -437,12 +443,18 @@ footer p {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  padding: 0 30px;
+  gap: 3%;
 }
 
-.contact-container .contact-text-container .contact-infos-container p, .contact-container .contact-text-container .contact-infos-container a {
+.contact-container .contact-text-container .contact-infos-container p, .contact-container .contact-text-container .contact-infos-container a, .contact-container .contact-text-container .contact-infos-container table {
   font-size: 1.3rem;
+  font-family: "font2", sans-serif;
+}
+
+@media screen and (max-width: 1150px) {
+  .contact-container .contact-text-container .contact-infos-container p, .contact-container .contact-text-container .contact-infos-container a, .contact-container .contact-text-container .contact-infos-container table {
+    font-size: 1.1rem;
+  }
 }
 
 .contact-container .contact-text-container .contact-infos-container h3 {
@@ -504,8 +516,6 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "font2", sans-serif;
-  font-size: 1.2rem;
 }
 
 .contact-container .contact-text-container .contact-infos-container .contact-infos-container-part3 .contact-infos {
@@ -514,8 +524,6 @@ footer p {
 }
 
 .contact-container .contact-text-container .contact-infos-container table {
-  font-family: "font2", sans-serif;
-  font-size: 1.3rem;
   border-collapse: collapse;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.529);
@@ -539,5 +547,54 @@ footer p {
   width: 100%;
   height: 100%;
   border: 1px solid #7A4500;
+}
+
+.photos-container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 14% 84% 2%;
+      grid-template-rows: 14% 84% 2%;
+}
+
+.photos-container .photos-text-container {
+  background: #C7AC92;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #7A4500;
+}
+
+.photos-container .photos-text-container h1 {
+  font-family: "font1", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #7A4500;
+  margin: 75px 0 20px;
+}
+
+.photos-container .photos-grid-container {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.photos-container .photos-grid-container img {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */

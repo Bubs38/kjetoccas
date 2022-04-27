@@ -1,0 +1,36 @@
+.photos-container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 14% 84% 2%;
+  
+  .photos-text-container {
+    background: $beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $brown;
+    h1 {
+      font-family: $font1;
+      font-size: 2.5rem;
+      text-align: center;
+      color: $brown;
+      margin: 75px 0 20px;
+    }
+  }
+
+  .photos-grid-container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
