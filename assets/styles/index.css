@@ -551,50 +551,45 @@ p {
 
 .photos-container {
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 14% 84% 2%;
-      grid-template-rows: 14% 84% 2%;
-}
-
-.photos-container .photos-text-container {
-  background: #C7AC92;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.photos-container main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.photos-container main .photos-text-container {
+  background: #C7AC92;
+  padding: 75px 0 30px;
   border-bottom: 1px solid #7A4500;
 }
 
-.photos-container .photos-text-container h1 {
-  font-family: "font1", sans-serif;
-  font-size: 2.5rem;
-  text-align: center;
-  color: #7A4500;
-  margin: 75px 0 20px;
-}
-
-.photos-container .photos-grid-container {
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.photos-container main .photos-grid-container {
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 50px auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: (300px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
+  grid-auto-flow: dense;
 }
 
-.photos-container .photos-grid-container img {
-  width: 100%;
+.photos-container main .photos-grid-container .grid-item {
+  width: 300px;
+  height: 200px;
 }
 /*# sourceMappingURL=index.css.map */
